@@ -1,10 +1,10 @@
-import { Geist, Geist_Mono , Roboto} from "next/font/google";
+import { Geist, Geist_Mono , Roboto , Poppins} from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
-  subsets: ["latin"], 
+const poppins = Poppins({
+  subsets: ["latin-ext"], 
   weight: ["400", "700"], 
-  style: ["normal", "italic"], 
+  style: ["normal", "italic" ], 
   display: "swap", 
 });
 
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} h-screen w-screen antialiased`}
+        className={`${poppins.className}  h-screen w-screen antialiased`}
       >
         {children}
       </body>
