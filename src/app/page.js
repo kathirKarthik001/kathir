@@ -1,41 +1,97 @@
-import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
-import { Spotlight } from "@/components/ui/Spotlight";
-import Image from "next/image";
+import ContactForm from '@/components/ContactForm';
+import Gallery from '@/components/Gallery';
+import Hero from '@/components/Hero';
+import Navbar from '@/components/Navbar';
+import ProjectCard from '@/components/ProjectCard';
+import { BackgroundBeams } from '@/components/ui/BackgroundBeams';
 
-export default function Home() {
+const Home = () => {
+  // Sample data for projects
+  const projects = [
+    {
+      title: 'Project 1',
+      description: 'This is a description of project 1.',
+      imageUrl: '/images/project1.jpg',
+      projectUrl: '#',
+    },
+    {
+      title: 'Project 2',
+      description: 'This is a description of project 2.',
+      imageUrl: '/images/project2.jpg',
+      projectUrl: '#',
+    },
+  ];
+
+  // Sample data for work experiences
+  const experiences = [
+    {
+      company: 'Company A',
+      role: 'FullStack Developer',
+      duration: 'Jan 2021 - Present',
+      description: 'Worked on building scalable web applications using modern technologies.',
+    },
+    {
+      company: 'Company B',
+      role: 'Frontend Developer',
+      duration: 'Jun 2019 - Dec 2020',
+      description: 'Developed user-friendly interfaces and collaborated with backend teams.',
+    },
+  ];
+
+  // Sample data for gallery
+  const galleryImages = [
+    '/images/gallery1.jpg',
+    '/images/gallery2.jpg',
+    '/images/gallery3.jpg',
+  ];
+
   return (
-    <main className="bg-[#0B0D0C] min-h-screen">
-      {/* Hero Section */}
-      <div className="flex h-screen flex-col-reverse md:flex-row w-full ">
-        
-        {/* Left Section - Name & Buttons */}
-        <div className=" text-white md:w-1/2 flex items-center justify-center py-10 md:py-0">
-          <div className="w-[90%] md:w-[70%]  p-5 flex flex-col items-center md:items-start">
-            
-            {/* Name & Title */}
-            <div className="w-full px-3 text-center md:text-left">
-              <h1 className="text-4xl md:text-7xl font-semibold">I'm Kathir</h1>
-              <p className="text-lg md:text-xl">Student & Software Developer</p>
-            </div>
+    <div className="min-h-screen">
+    <BackgroundBeams />
+      <Navbar />
+      <main className="container mx-auto px-4 py-8">
+        {/* Hero Section */}
+        <Hero/>
 
-            {/* Buttons */}
-            <div className="flex justify-center pl-3 md:justify-start gap-4 w-full mt-6">
-              <button className="bg-gray-900 outline outline-white outline-2  text-white px-5 py-2 rounded-md">Button 1</button>
-              <button className=" outline outline-white outline-2 text-white px-5 py-2 rounded-md">Button 2</button>
-            </div>
-
+        {/* Work Experience Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
+          <div className="space-y-6">
+            {experiences.map((exp, index) => (
+              <div key={index} className="bg-gray-800 p-6 rounded-lg">
+                <h3 className="text-2xl font-semibold">{exp.role}</h3>
+                <p className="text-gray-400">{exp.company} | {exp.duration}</p>
+                <p className="mt-2 text-gray-300">{exp.description}</p>
+              </div>
+            ))}
           </div>
-        </div>
+        </section>
 
-        {/* Right Section - Image */}
-        <div className=" h-[40%] bg-red-200 w-full md:h-full md:w-1/2 flex items-center justify-center md:py-0">
-          <div className="min-w-[90%] min-h-[90%] md:min-h-[60%] md:min-w-[60%] bg-gray-800  border-red-200 border-4 ">
-
+        {/* Projects Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
           </div>
-        </div>
+        </section>
 
-        <BackgroundBeams />
-      </div>
-    </main>
+        {/* Gallery Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Gallery</h2>
+          <Gallery images={galleryImages} />
+        </section>
+
+        {/* Contact Section */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
+          <ContactForm />
+        </section>
+      </main>
+    </div>
   );
-}
+};
+
+
+export default Home;

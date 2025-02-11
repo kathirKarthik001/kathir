@@ -25,6 +25,9 @@ export const theme = {
         },
       },
     },
+    screens: {
+        'tab': '977px', 
+    },
   },
 };
 export const plugins = [addVariablesForColors];
