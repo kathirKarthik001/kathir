@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
 import { BackgroundBeams } from '@/components/ui/BackgroundBeams';
+import About from '@/components/About'
 
 const Home = () => {
   // Sample data for projects
@@ -53,6 +54,8 @@ const Home = () => {
         {/* Hero Section */}
         <Hero/>
 
+        <About/>
+
         {/* Work Experience Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
@@ -89,6 +92,7 @@ const Home = () => {
           <ContactForm />
         </section>
       </main>
+      
     </div>
   );
 };

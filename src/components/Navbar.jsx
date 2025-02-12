@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +14,15 @@ const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="text-white p-4 flex justify-between items-center sticky top-0 z-50">
+      <header className="text-white mx-7  p-4 flex justify-between items-center sticky top-0 z-50">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-semibold">
-          Kathir
+        <Link href="/" className="md:ml-11">
+          <Image 
+          src={"/logo.svg"}
+          width={40}
+          height={50} 
+            className='object-contain  max-md:w-9 max-md:h-10'
+          />
         </Link>
 
         {/* Hamburger Icon (Mobile) */}
