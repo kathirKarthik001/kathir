@@ -1,4 +1,4 @@
-'use client'; // Mark as a Client Component
+'use client'; 
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="text-white mx-7  p-4 flex justify-between items-center sticky top-0 z-50">
+      <header className="text-white bg-transparent/90 md:px-7  p-4 flex justify-between items-center sticky top-0 z-50">
         {/* Logo */}
         <Link href="/" className="md:ml-11">
           <Image 

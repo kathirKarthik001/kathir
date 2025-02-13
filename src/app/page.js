@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
 import { BackgroundBeams } from '@/components/ui/BackgroundBeams';
 import About from '@/components/About'
+import Skills from '@/components/Skills';
 
 const Home = () => {
   // Sample data for projects
@@ -55,6 +56,8 @@ const Home = () => {
         <Hero/>
 
         <About/>
+
+        <Skills/>
 
         {/* Work Experience Section */}
         <section className="mb-12">
