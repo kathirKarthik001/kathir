@@ -59,19 +59,6 @@ const Home = () => {
 
         <Skills/>
 
-        {/* Work Experience Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
-          <div className="space-y-6">
-            {experiences.map((exp, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-2xl font-semibold">{exp.role}</h3>
-                <p className="text-gray-400">{exp.company} | {exp.duration}</p>
-                <p className="mt-2 text-gray-300">{exp.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Projects Section */}
         <section className="mb-12">
