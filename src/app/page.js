@@ -51,7 +51,7 @@ const Home = () => {
     <div className="min-h-screen">
     <BackgroundBeams />
       <Navbar />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-2 py-8">
         {/* Hero Section */}
         <Hero/>
 
