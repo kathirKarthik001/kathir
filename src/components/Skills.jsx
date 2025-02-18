@@ -6,12 +6,12 @@ import WorkCard from './WorkCard';
 
 const Skills = () => {
   return (
-    <section className="flex flex-col md:flex-row md:justify-evenly gap-1 items-center  p-4 md:p-3  mb-7 md:h-[80vh] bg-gray-300 ">
+    <section className="flex flex-col md:flex-row bg-gray-900/40  gap-1  p-4 md:p-3 mb-7 md:max-h-fit md:min-h-[80vh]  ">
 
-        <div className=" w-full  md:w-1/2 h-full flex items-center justify-center ">
+        <div className="  w-full md:w-1/2 md:min-h-full ">
             <Education/>
         </div>
-        <div className=" w-full  md:w-1/2 h-full flex items-center justify-center ">
+        <div className="  w-full md:w-1/2 md:min-h-full ">
             <WorkCard/>
         </div>
 

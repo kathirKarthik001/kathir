@@ -28,38 +28,46 @@ const data = [
 
 const Education = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10">
-      <ol className="relative  dark:border-gray-700">
-        {data.map((event, index) => (
-          <motion.li
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="mb-5 ms-4 relative"
-          >
+    <div className="max-w-4xl mx-auto px-4">
+    
+      <motion.h1 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5}}
+        className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline">
+        Education
+      </motion.h1>
 
-            {/* Event Content */}
-            <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 sm:p-6">
-              <time className="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
-                {event.date}
-              </time>
+      <ol className="dark:border-gray-700">
+          {data.map((event, index) => (
+            <motion.li
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="mb-4 ms-4 relative"
+            >
+              <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 sm:p-6">
+                <time className="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                  {event.date}
+                </time>
 
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                {event.title}
-              </h3>
+                <h3 className=" text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  {event.title}
+                </h3>
 
-              <p className="text-base text-gray-600 dark:text-gray-300">
-                {event.description}
-              </p>
-              <p className="text-base text-gray-600 dark:text-gray-300">
-                score : {event.grade}
-              </p>
-            </div>
-          </motion.li>
-        ))}
+                <p className="text-base text-gray-600 dark:text-gray-300">
+                  {event.description}
+                </p>
+                <p className="text-base text-gray-600 dark:text-gray-300">
+                  score : {event.grade}
+                </p>
+              </div>
+            </motion.li>
+          ))}
       </ol>
+
     </div>
   );
 };
