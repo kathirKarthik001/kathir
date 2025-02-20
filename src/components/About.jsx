@@ -4,7 +4,6 @@ import Image from 'next/image';
 const About = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row md:justify-evenly gap-1 items-center  p-6 md:p-3  mb-7 md:h-[80vh] bg-gray-900/40 ">
-
         <div className=" w-full md:w-[40%] h-full flex items-center justify-center ">
             <Image src={'/kathir2.svg'} width={500} height={700}
             className='object-cover w-[80%] h-[80%]'/>

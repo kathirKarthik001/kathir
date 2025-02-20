@@ -52,7 +52,7 @@ const Navbar = () => {
           <Link href="/projects" className="hover:text-gray-400">Projects</Link>
           <Link href="/gallery" className="hover:text-gray-400">Gallery</Link>
           <Link href="/experience" className="hover:text-gray-400">Experience</Link>
-          <Link href="/contact" className="hover:text-gray-400">Contact</Link>
+          <Link href="#contact" className="hover:text-gray-400">Contact</Link>
         </nav>
       </header>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
             <Link href="/experience" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Experience
             </Link>
-            <Link href="/contact" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
+            <Link href="#contact" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Contact
             </Link>
           </nav>

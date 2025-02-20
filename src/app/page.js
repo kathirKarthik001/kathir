@@ -1,8 +1,8 @@
-import ContactForm from '@/components/ContactForm';
+import Contact from '@/components/Contact';
 import Gallery from '@/components/Gallery';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import ProjectCard from '@/components/ProjectCard';
+import ProjectsSection from '@/components/ProjectsSection';
 import { BackgroundBeams } from '@/components/ui/BackgroundBeams';
 import About from '@/components/About'
 import Skills from '@/components/Skills';
@@ -59,27 +59,15 @@ const Home = () => {
 
         <Skills/>
 
+        <ProjectsSection  />
 
-        {/* Projects Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
-          </div>
-        </section>
 
-        {/* Gallery Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Gallery</h2>
-          <Gallery images={galleryImages} />
-        </section>
+        <Gallery images={galleryImages} />
 
         {/* Contact Section */}
         <section>
           <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
-          <ContactForm />
+          <Contact />
         </section>
       </main>
       
