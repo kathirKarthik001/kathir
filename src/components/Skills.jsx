@@ -13,7 +13,6 @@ const Skills = () => {
         <div className="  w-full md:w-1/2 md:min-h-full ">
             <WorkCard/>
         </div>
-
     </section>
   )
 }

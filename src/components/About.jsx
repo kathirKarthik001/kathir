@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
+    <>
     <section className="flex flex-col-reverse md:flex-row md:justify-evenly gap-1 items-center  p-6 md:p-3  mb-7 md:h-[80vh] ">
         <div className=" w-full md:w-[40%] h-full flex items-center justify-center ">
             <Image src={'/kathir2.svg'} alt='pic' width={500} height={700}
@@ -57,6 +58,9 @@ const About = () => {
 
         </div>
     </section>
+
+    <div id="education" className="p-7"></div>
+    </>
   )
 }
 

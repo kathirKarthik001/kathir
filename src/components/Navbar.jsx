@@ -50,25 +50,25 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex mr-10 gap-6">
-          <Link href="/projects" className="hover:text-gray-400">Projects</Link>
-          <Link href="/gallery" className="hover:text-gray-400">Gallery</Link>
-          <Link href="/experience" className="hover:text-gray-400">Experience</Link>
+          <Link href="#projects" className="hover:text-gray-400">Projects</Link>
+          <Link href="#gallery" className="hover:text-gray-400">Gallery</Link>
+          <Link href="#education" className="hover:text-gray-400">Education</Link>
           <Link href="#contact" className="hover:text-gray-400">Contact</Link>
         </nav>
       </header>
 
       {/* Mobile View menu*/}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-40">
+        <div className="md:hidden fixed inset-0 bg-black font-semibold bg-opacity-95 z-40">
           <nav className="flex flex-col items-center justify-center h-full gap-8">
-            <Link href="/projects" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
+            <Link href="#projects" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Projects
             </Link>
-            <Link href="/gallery" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
+            <Link href="#gallery" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Gallery
             </Link>
-            <Link href="/experience" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
-              Experience
+            <Link href="#education" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
+              Education
             </Link>
             <Link href="#contact" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Contact

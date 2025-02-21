@@ -57,6 +57,8 @@ const ProjectsSection = () => {
 
       </Link>
 
+      <div id="gallery" className="p-4"></div>
+
     </section>
   );
 };

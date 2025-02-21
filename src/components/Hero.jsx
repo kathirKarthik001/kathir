@@ -1,8 +1,10 @@
 "use client"
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({ scrollToContact }) => {
+
   return (
     <section className="flex flex-col justify-center md:flex-row-reverse md:justify-evenly gap-1 items-center   text-center p-6 md:p-12  mb-4 h-[80vh] ">
       {/* Animated Image */}
@@ -54,20 +56,27 @@ const Hero = () => {
       </motion.p>
 
       <motion.div className="flex gap-2">
-        <motion.button
-        initial={{ opacity: 0, y: 20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
-         className="border-gray-400 rounded text-white py-3 px-6 mt-3 bg-gray-700">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 2 }}
+        >
+          <Link
+            href="/resume"
+            className="inline-block border-gray-400 rounded text-white py-3 px-6 mt-3 bg-gray-700 hover:bg-gray-600 transition-colors"
+          >
             Resume
-        </motion.button>
+          </Link>
+        </motion.div>
         <motion.button
-        initial={{ opacity: 0, y: 20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 1, delay: 2.2 }}
-         className="border-gray-700 border-2 rounded py-3 px-6 mt-3 text-white">
-            Contact
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2.2 }}
+          className="border-gray-700 border-2 rounded py-3 px-6 mt-3 text-white hover:bg-gray-800 transition-colors"
+          onClick={scrollToContact}
+        >
+          Contact
         </motion.button>
       </motion.div>
       

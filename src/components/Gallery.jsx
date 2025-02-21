@@ -51,6 +51,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+      <div id="contact" className="p-4"></div>
     </section>
   );
 };

@@ -19,35 +19,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kathir Karthik M | MERN Stack Developer & Tech Enthusiast",
+  title: "Kathir Karthik M",
   description:
-    "Kathir Karthik M - A passionate MERN Stack Developer specializing in React Native, Firebase, Next.js, and full-stack development. Explore projects, blogs, and insights on modern web technologies.",
+    "Kathir Karthik M - A passionate Full Stack Developer.",
   keywords: [
     "Kathir Karthik M",
     "MERN Stack Developer",
-    "React Native",
+    "React.js",
     "Next.js",
     "Firebase",
     "JavaScript Developer",
     "Full-Stack Developer",
     "Software Engineer",
+    "SDE",
   ].join(", "),
   author: "Kathir Karthik M",
   og: {
-    title: "Kathir Karthik M | MERN Stack Developer & Tech Enthusiast",
+    title: "Kathir Karthik M ",
     description:
-      "Explore the portfolio and blogs of Kathir Karthik M, a full-stack developer experienced in React Native, Next.js, and Firebase.",
+      "Kathir Karthik M - A passionate Full Stack Developer.",
     type: "website",
     url: "",
     image: "",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kathir Karthik M | MERN Stack Developer & Tech Enthusiast",
+    title: "Kathir Karthik M ",
     description:
-      "Discover the work and insights of Kathir Karthik M, an expert in React Native, Next.js, and full-stack development.",
-    image: "https://your-website-url.com/twitter-image.jpg",
-    site: "@yourTwitterHandle",
+      "Kathir Karthik M - A passionate Full Stack Developer.",
+    image: "",
+    site: "",
   },
 };
 

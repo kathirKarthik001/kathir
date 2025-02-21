@@ -88,6 +88,7 @@ const WorkCard = () => {
       <h1 className="text-white text-2xl font-semibold underline text-center">Tech Stack</h1>
         <TechStack/>
       </motion.div>
+      <div id="projects" className="p-4"></div>
     </div>
   );
 };
