@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import Image from 'next/image';
 import Education from './Education';
 import WorkCard from './WorkCard';
 

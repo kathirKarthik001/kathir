@@ -21,6 +21,7 @@ const Navbar = () => {
           src={"/logo.svg"}
           width={40}
           height={50} 
+          alt='logo'
             className='object-contain  max-md:w-9 max-md:h-10'
           />
         </Link>

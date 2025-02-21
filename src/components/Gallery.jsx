@@ -33,7 +33,7 @@ const Gallery = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="bg-gray-900/40 border-2 border-gray-400 shadow-lg w-full p-2 flex flex-col items-center"
+            className="bg-gray-900/40 border-[1px] border-gray-400 shadow-lg w-full p-2 flex flex-col items-center"
           >
             {/* Image */}
             <div className="w-full h-56 overflow-hidden">

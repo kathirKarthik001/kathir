@@ -34,10 +34,11 @@ export default function Contact() {
           src={'/contact.webp'}
           width={400}
           height={700}
+          alt='pic'
           className="object-cover w-full rounded-xl h-full"
         />
       </div>
-      <Card className=" w-full md:w-[60%] max-w-lg  shadow-2xl rounded-xl bg-gray-900/40   p-5">
+      <Card className=" w-full md:w-[60%] max-w-lg  shadow-2xl rounded-xl md:bg-gray-900/40   p-5">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold  text-white">
             Message Me 

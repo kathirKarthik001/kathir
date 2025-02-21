@@ -10,14 +10,14 @@ const data = [
     date: "Apr 2024 - Sep 2024 ",
     title: "Full Stack Dev",
     company: "The Foundax Company",
-    imgSource: "/foundax.jpg",
+    imgSource: "/foundax.webp",
     url:"https://www.thefoundaxcompany.com/"
   },
   {
     date: "Jan 2024 - Feb 2024",
     title: "Full Stack Dev Intern",
     company: "Velam AI ",
-    imgSource: "/velam.jpeg",
+    imgSource: "/velam.webp",
     url:"https://www.vantageflow.in/"
   },
 ];
@@ -35,9 +35,9 @@ const WorkCard = () => {
         Experiences
       </motion.h1>
 
-      <ol className="">
+      <ol>
         {data.map((event, index) => (
-          <Link href={event.url} target="_blank">
+          <Link href={event.url} key={index} target="_blank">
           <motion.li
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -50,11 +50,11 @@ const WorkCard = () => {
             <div className="  md:h-[100%] h-full w-[40%] md:w-1/4 ">
               <Image
                 src={event.imgSource}
-                width={220}
-                height={220}
+                width={250}
+                height={250}
                 alt={event.title}
-                className={`rounded-l-md shadow-lg object-contain ${
-                event.imgSource.trim() === "/velam.jpeg" ? "object-cover" : "bg-white"
+                className={`rounded-l-md shadow-lg  object-contain ${
+                event.imgSource.trim() === "/velam.webp" ? "object-cover" : "bg-white"
                 } h-full w-full`}
 
               />

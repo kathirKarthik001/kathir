@@ -14,8 +14,8 @@ const Hero = () => {
         className="relative w-40 h-40 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full md:rounded-md overflow-hidden  border-4 border-gray-500 shadow-lg"
       >
         <Image 
-          src="/pic1.jpg" 
-          alt="John Doe" 
+          src="/pic1.webp" 
+          alt="pic1" 
           fill 
           className="object-cover"
         />
