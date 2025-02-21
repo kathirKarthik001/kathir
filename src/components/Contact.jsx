@@ -29,7 +29,7 @@ export default function Contact() {
         Contact 
       </motion.h1>
     <section  className="flex   items-center  justify-center h-fit gap-2">
-      <div className=" h-[550px]  hidden md:block  md:w-[40%]">
+      <div className=" h-[460px]  hidden md:block  md:w-[40%]">
         <Image
           src={'/contact.webp'}
           width={400}
@@ -37,12 +37,12 @@ export default function Contact() {
           className="object-cover w-full rounded-xl h-full"
         />
       </div>
-      <Card className=" w-full md:w-[60%] max-w-lg  shadow-2xl rounded-xl bg-gray-900/40 border border-gray-200  p-5">
+      <Card className=" w-full md:w-[60%] max-w-lg  shadow-2xl rounded-xl bg-gray-900/40   p-5">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold  text-white">
             Message Me 
           </CardTitle>
-          <p className="text-gray-600 dark:text-gray-400 mt-1">I’d love to hear from you!</p>
+          <p className="text-gray-400 mt-1">I’d love to hear from you!</p>
         </CardHeader>
         <CardContent>
           <form
@@ -53,45 +53,45 @@ export default function Contact() {
           >
             {/* Name Input */}
             <div>
-              <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
+              {/* <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
                 Full Name
-              </label>
+              </label> */}
               <Input
                 type="text"
                 name="name"
-                placeholder="Shyam Sundhar"
+                placeholder="Full Name"
                 required
-                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border bg-bg-gray-900/40 rounded-lg focus:ring-2 focus:ring-gray-400"
                 onChange={handleChange}
               />
             </div>
 
             {/* Email Input */}
             <div>
-              <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
+              {/* <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
                 Email Address
-              </label>
+              </label> */}
               <Input
                 type="email"
                 name="email"
-                placeholder="Shyam@example.com"
+                placeholder="Email Address"
                 required
-                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-gray-400"
                 onChange={handleChange}
               />
             </div>
 
             {/* Message Textarea */}
             <div>
-              <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
+              {/* <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
                 Your Message
-              </label>
+              </label> */}
               <Textarea
                 name="message"
                 placeholder="Type your message here..."
                 rows={4}
                 required
-                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-gray-400"
                 onChange={handleChange}
               />
             </div>
@@ -102,7 +102,7 @@ export default function Contact() {
             {/* Submit Button */}
             <Button
               type="submit"
-              className="w-full bg-gray-600 text-white py-3 rounded-lg text-lg font-medium shadow-md transition-all duration-300 hover:bg-gray-700 focus:ring-2 focus:ring-white"
+              className="w-full bg-gray-900/40 text-white py-3 rounded-lg text-lg font-medium shadow-md transition-all duration-300 hover:bg-gray-900 focus:ring-2 focus:ring-white"
             >
               Send Message
             </Button>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const images = [
   { src: "/events/e0-techzooka.webp", title: "Infosys TechZooka '24" },
@@ -18,13 +19,21 @@ const images = [
 const Gallery = () => {
   return (
     <section className="mb-12 px-4">
-      <h2 className="text-3xl font-semibold text-white underline mb-6 text-center">Gallery</h2>
+      <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5}}
+              className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline">
+              Gallery
+      </motion.h1>
+
       <div 
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {images.map((image, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg p-3 flex flex-col items-center"
+            className="bg-gray-900/40 border-2 border-gray-400 shadow-lg w-full p-2 flex flex-col items-center"
           >
             {/* Image */}
             <div className="w-full h-56 overflow-hidden">
@@ -38,7 +47,7 @@ const Gallery = () => {
             </div>
 
             {/* Title */}
-            <p className="mt-3 text-lg font-medium text-gray-800">{image.title}</p>
+            <p className="mt-3 text-lg font-medium text-white">{image.title}</p>
           </div>
         ))}
       </div>

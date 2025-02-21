@@ -5,16 +5,16 @@ import {FaXTwitter} from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <footer className=" border-t  border-t-slate-50 text-gray-300 w-full px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+    <footer className=" border-t mt-3  border-t-slate-50 bg-transparent w-full px-6 py-4 flex flex-col md:flex-row items-center  justify-between">
       
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-2">
+      <Link href="/" className="flex text-white items-center gap-2">
         <Image src="/logo.svg" width={40} height={40} alt="Logo" className="object-contain" />
         <span className="text-lg font-semibold">Kathir Karthik</span>
       </Link>
 
       {/* Social Media Links */}
-      <div className="flex gap-5 mt-4 md:mt-0">
+      <div className="flex gap-5 mt-4 md:mt-0 text-gray-400">
         <Link href="https://github.com/kathirKarthik001" target="_blank">
           <FaGithub className="text-xl hover:text-white transition duration-300" />
         </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       {/* Developer Credit */}
-      <p className="text-sm mt-4 md:mt-0"><span className="font-semibold text-white">
+      <p className="text-sm mt-4 text-white md:mt-0"><span className="font-semibold text-white">
       A Kathir Creation</span> | 2025</p>
 
     </footer>

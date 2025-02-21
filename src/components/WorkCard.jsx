@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import TechStack from "./TechStack";
+import Link from "next/link";
 
 const data = [
   {
@@ -10,12 +11,14 @@ const data = [
     title: "Full Stack Dev",
     company: "The Foundax Company",
     imgSource: "/foundax.jpg",
+    url:"https://www.thefoundaxcompany.com/"
   },
   {
     date: "Jan 2024 - Feb 2024",
     title: "Full Stack Dev Intern",
     company: "Velam AI ",
     imgSource: "/velam.jpeg",
+    url:"https://www.vantageflow.in/"
   },
 ];
 
@@ -26,6 +29,7 @@ const WorkCard = () => {
       <motion.h1 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5}}
       className="font-semibold text-2xl text-center bg-transparent p-3 text-white underline">
         Experiences
@@ -33,6 +37,7 @@ const WorkCard = () => {
 
       <ol className="">
         {data.map((event, index) => (
+          <Link href={event.url} target="_blank">
           <motion.li
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -49,33 +54,35 @@ const WorkCard = () => {
                 height={220}
                 alt={event.title}
                 className={`rounded-l-md shadow-lg object-contain ${
-                event.imgSource.trim() === "/velam.jpeg" ? "bg-black" : "bg-white"
+                event.imgSource.trim() === "/velam.jpeg" ? "object-cover" : "bg-white"
                 } h-full w-full`}
 
               />
             </div>
 
-            <div className="bg-white rounded-r-md dark:bg-gray-800 shadow-md  flex flex-col pl-[10%] justify-center p-2 sm:p-6 w-full md:w-3/4">
-              <time className="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400 block">
+            <div className=" rounded-r-md  shadow-md  flex flex-col pl-[10%] justify-center p-2 sm:p-6 w-full md:w-3/4 bg-gray-900/40">
+              <time className="mb-1 text-sm font-medium text-gray-400 block">
                 {event.date}
               </time>
 
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-white">
                 {event.title}
               </h3>
 
-              <h3 className="text-md font-semibold text-gray-600 dark:text-white">
+              <h3 className="text-md font-semibold text-gray-400 dark:text-white">
                 {event.company}
               </h3>
             </div>
 
           </motion.li>
+          </Link>
         ))}
       </ol>
       
       <motion.div 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5}}
       className=" w-full min-h-48 h-fit">
       <h1 className="text-white text-2xl font-semibold underline text-center">Tech Stack</h1>
