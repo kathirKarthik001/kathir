@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono , Roboto , Poppins} from "next/font/google";
+import { Poppins} from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -8,15 +8,7 @@ const poppins = Poppins({
   display: "swap", 
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Kathir Karthik M",
