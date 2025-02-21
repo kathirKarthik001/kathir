@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import TechStack from "./TechStack";
 
 const data = [
   {
@@ -76,7 +77,10 @@ const WorkCard = () => {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5}}
-      className="bg-yellow-400 w-full h-48"></motion.div>
+      className=" w-full min-h-48 h-fit">
+      <h1 className="text-white text-2xl font-semibold underline text-center">Tech Stack</h1>
+        <TechStack/>
+      </motion.div>
     </div>
   );
 };

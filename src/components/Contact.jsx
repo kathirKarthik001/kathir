@@ -24,10 +24,11 @@ export default function Contact() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5}}
+        id="contact"
         className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline">
         Contact 
       </motion.h1>
-    <section id="contact" className="flex   items-center  justify-center h-fit gap-2">
+    <section  className="flex   items-center  justify-center h-fit gap-2">
       <div className=" h-[550px]  hidden md:block  md:w-[40%]">
         <Image
           src={'/contact.webp'}
@@ -48,7 +49,7 @@ export default function Contact() {
             action="https://formsubmit.co/8124e234f66c2d29a9ccc15e940c0331"
             method="POST"
             className="space-y-5"
-            target="_template"
+            target="_blank"
           >
             {/* Name Input */}
             <div>
