@@ -4,8 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function ContactForm() {
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,11 +19,27 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="flex items-center bg-transparent justify-center min-h-screen px-4">
-      <Card className="w-full max-w-lg  shadow-2xl rounded-xl border border-gray-200  p-5">
+    <>
+    <motion.h1 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5}}
+        className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline">
+        Contact 
+      </motion.h1>
+    <section id="contact" className="flex   items-center  justify-center h-fit gap-2">
+      <div className=" h-[550px]  hidden md:block  md:w-[40%]">
+        <Image
+          src={'/contact.webp'}
+          width={400}
+          height={700}
+          className="object-cover w-full rounded-xl h-full"
+        />
+      </div>
+      <Card className=" w-full md:w-[60%] max-w-lg  shadow-2xl rounded-xl bg-gray-900/40 border border-gray-200  p-5">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold underline text-white">
-            Contact 
+          <CardTitle className="text-3xl font-bold  text-white">
+            Message Me 
           </CardTitle>
           <p className="text-gray-600 dark:text-gray-400 mt-1">I’d love to hear from you!</p>
         </CardHeader>
@@ -91,5 +109,6 @@ export default function ContactForm() {
         </CardContent>
       </Card>
     </section>
+    </>
   );
 }
