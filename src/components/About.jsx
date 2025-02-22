@@ -28,10 +28,10 @@ const About = () => {
 
             <div className="mb-3">
                 <h1 className=' text-xl md:text-2xl text-white font-semibold'>Who am I ?</h1>
-                <p className=' text-[15px] text-white md:text-justify md:text-xl font-semibold my-3'>My name is Kathir Karthik M, a pre-final year CSE student at KPR Institute of Engineering and Technology. 
+                <p className=' text-[15px] text-white md:text-justify md:text-xl font-semibold my-3'>I'm Kathir, a passionate and self-taught software developer. With a strong foundation in design and a tireless work ethic, I thrive on turning ideas into functional, user-friendly solutions.
                 </p>
                 <p className=' text-[12px] md:text-[17px] md:text-justify'>
-                I'm passionate about building robust web and mobile applications and have collaborated with fellow developers and professionals to create impactful solutions. Always eager to learn and innovate! 
+                Driven by curiosity and ambition, I am constantly seeking opportunities to learn, grow, and evolve in the ever-changing tech landscape.
                 </p>
             </div>
 

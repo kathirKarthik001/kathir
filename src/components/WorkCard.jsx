@@ -8,17 +8,17 @@ import Link from "next/link";
 const data = [
   {
     date: "Apr 2024 - Sep 2024 ",
-    title: "Full Stack Dev",
+    title: "Full Stack Intern",
     company: "The Foundax Company",
     imgSource: "/foundax.webp",
-    url:"https://www.thefoundaxcompany.com/"
+    url:"https://www.linkedin.com/company/the-foundax-company/"
   },
   {
     date: "Jan 2024 - Feb 2024",
-    title: "Full Stack Dev Intern",
+    title: "Full Stack Intern",
     company: "Velam AI ",
     imgSource: "/velam.webp",
-    url:"https://www.vantageflow.in/"
+    url:"https://www.linkedin.com/company/velam-ai/"
   },
 ];
 
