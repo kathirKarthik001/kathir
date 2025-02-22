@@ -1,5 +1,6 @@
 import { Poppins} from "next/font/google";
 import "./globals.css";
+import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 
 const poppins = Poppins({
   subsets: ["latin-ext"], 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} bg-black overflow-x-hidden w-screen h-screen antialiased`}
       >
+      <BackgroundBeams />
         {children}
       </body>
     </html>

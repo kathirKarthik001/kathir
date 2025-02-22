@@ -12,7 +12,7 @@ const About = () => {
     <>
     <section className="flex flex-col-reverse md:flex-row md:justify-evenly gap-1 items-center  p-6 md:p-3  mb-7 md:h-[80vh] ">
         <div className=" w-full md:w-[40%] h-full flex items-center justify-center ">
-            <Image src={'/kathir2.svg'} alt='pic' width={500} height={700}
+            <Image src={'/pic2.webp'} alt='pic' width={500} height={700}
             className='object-cover w-[80%] h-[80%]'/>
         </div>
 
