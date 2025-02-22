@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="text-white bg-transparent/50 md:px-7  p-4 flex justify-between items-center sticky top-0 z-50">
+      <header className="text-white bg-transparent/50 md:px-7  p-4 flex justify-between items-center sticky top-0 z-[999]">
         {/* Logo */}
         <Link href="/" className="md:ml-11">
           <Image 
@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile View menu*/}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black font-semibold bg-opacity-95 z-40">
+        <div className="md:hidden fixed inset-0 bg-black font-semibold bg-opacity-95 z-[99]">
           <nav className="flex flex-col items-center justify-center h-full gap-8">
             <Link href="#projects" className="text-white text-2xl hover:text-gray-400" onClick={toggleMenu}>
               Projects

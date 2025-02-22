@@ -65,13 +65,13 @@ const WorkCard = () => {
                 {event.date}
               </time>
 
-              <h3 className="text-lg font-semibold text-white">
+              <div className="text-lg font-semibold text-white">
                 {event.title}
-              </h3>
+              </div>
 
-              <h3 className="text-md font-semibold text-gray-400 dark:text-white">
+              <div className="text-md font-semibold text-gray-400 dark:text-white">
                 {event.company}
-              </h3>
+              </div>
             </div>
 
           </motion.li>

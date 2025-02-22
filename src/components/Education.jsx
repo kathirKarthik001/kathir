@@ -54,9 +54,9 @@ const Education = () => {
                   {event.date}
                 </time>
 
-                <h3 className=" text-md md:text-lg font-semibold text-white dark:text-white">
+                <div className=" text-md md:text-lg font-semibold text-white dark:text-white">
                   {event.title}
-                </h3>
+                </div>
 
                 <p className="text-base text-gray-400">
                   {event.description}

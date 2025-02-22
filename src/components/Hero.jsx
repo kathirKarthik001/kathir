@@ -17,7 +17,8 @@ const Hero = () => {
 
         <div className="flex gap-2">
           <Link
-            href={"/"}
+          target="_blank"
+            href={"https://drive.google.com/file/d/1vmZyAwhJr9sveXfz3bcgSPoKhrD1KS3A/view"}
             className="inline-block bg-gray-800/40 rounded text-white py-3 px-6 mt-3 bg-gray-700 hover:bg-gray-900/40  z-50"
           >
             Resume
