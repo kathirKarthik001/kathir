@@ -26,6 +26,16 @@ const WorkCard = () => {
   return (
     <div className="w-full flex  flex-col px-4 justify-start  md:h-full">
 
+    <motion.div 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5}}
+      className=" w-full min-h-48 mt-3 h-fit">
+      <h1 className="text-white text-2xl font-semibold underline text-center">Tech Stack</h1>
+        <TechStack/>
+      </motion.div>
+
       <motion.h1 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -79,15 +89,7 @@ const WorkCard = () => {
         ))}
       </ol>
       
-      <motion.div 
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5}}
-      className=" w-full min-h-48 h-fit">
-      <h1 className="text-white text-2xl font-semibold underline text-center">Tech Stack</h1>
-        <TechStack/>
-      </motion.div>
+      
       <div id="projects" className="p-4"></div>
     </div>
   );

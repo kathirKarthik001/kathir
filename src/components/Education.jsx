@@ -28,7 +28,7 @@ const data = [
 
 const Education = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-4xl  mx-auto px-4">
     
       <motion.h1 
         initial={{ opacity: 0, y: 30 }}
