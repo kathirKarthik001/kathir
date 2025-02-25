@@ -35,7 +35,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className=" self-start flex items-center text-white gap-7 justify-start  md:gap-7 w-full md:w-[80%] p-2 h-12 ">
+            <div className=" self-start flex items-center text-white gap-6 justify-start  md:gap-7 w-full md:w-[80%] p-1 md:p-2 h-12 ">
             <Link href="https://github.com/kathirKarthik001" target="_blank">
               <FaGithub className="text-2xl  hover:text-white transition duration-300" />
              </Link>

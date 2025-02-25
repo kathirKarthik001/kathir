@@ -92,7 +92,7 @@ const ProjectCard = ({ title, description,isPrivate, imageUrl, projectUrl, githu
           <div className="flex gap-3">
             <div className="text-xl font-semibold mb-2">{title}</div>
             {isPrivate && 
-              <div className="bg-gray-300 h-fit px-2 font-semibold text-black w-fit rounded-lg">
+              <div className="bg-gray-300 h-fit max-md:text-sm  px-2 font-semibold text-black w-fit rounded-lg">
               consultancy
               </div>
             }
