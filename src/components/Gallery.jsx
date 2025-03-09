@@ -14,6 +14,7 @@ const images = [
   { src: "/events/e8-poster-design.webp", title: "Poster Design" },
   { src: "/events/e9-ieee-cs-day.webp", title: "IEEE CS Day" },
   { src: "/events/e10-innovosense.webp", title: "Innovosense '23" },
+  { src: "/events/e11-codevolt-vit.webp", title: "CodeVolt '25 Hackathon" },
 ];
 
 const Gallery = () => {
