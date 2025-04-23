@@ -34,16 +34,16 @@ const Gallery = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="bg-gray-900/40 border-[1px] border-gray-400 shadow-lg w-full p-2 flex flex-col items-center"
+            className="bg-gray-900/40 border-[1px] border-gray-400 shadow-lg w-full p-2 flex flex-col items-center rounded-md  "
           >
             {/* Image */}
-            <div className="w-full h-56 overflow-hidden">
+            <div className="w-full h-56 overflow-hidden  ">
               <Image
                 src={image.src}
                 alt={image.title}
                 width={300}
                 height={200}
-                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                className="w-full h-full rounded-md object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
 
