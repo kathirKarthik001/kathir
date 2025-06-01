@@ -1,7 +1,7 @@
-'use client'; // Mark as a Client Component
-import { useState } from 'react';
+"use client"; // Mark as a Client Component
+import { useState } from "react";
 import { motion } from "motion/react";
-import Link from 'next/link';
+import Link from "next/link";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +21,18 @@ const HamburgerMenu = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-16 right-4 bg-gray-800 p-4 rounded-lg flex flex-col gap-4"
         >
-          <Link href="/projects" className="hover:text-gray-400">Projects</Link>
-          <Link href="/gallery" className="hover:text-gray-400">Gallery</Link>
-          <Link href="/experience" className="hover:text-gray-400">Experience</Link>
-          <Link href="/contact" className="hover:text-gray-400">Contact</Link>
+          <Link href="/projects" className="hover:text-gray-400">
+            Projects
+          </Link>
+          <Link href="/gallery" className="hover:text-gray-400">
+            Gallery
+          </Link>
+          <Link href="/experience" className="hover:text-gray-400">
+            Experience
+          </Link>
+          <Link href="/contact" className="hover:text-gray-400">
+            Contact
+          </Link>
         </motion.div>
       )}
     </div>

@@ -20,17 +20,17 @@ const images = [
 const Gallery = () => {
   return (
     <section className="mb-12 px-4">
-      <motion.h1 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5}}
-              className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline">
-              Gallery
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="font-semibold text-2xl text-center bg-transparent p-3 mb-3 text-white underline"
+      >
+        Gallery
       </motion.h1>
 
-      <div 
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {images.map((image, index) => (
           <div
             key={index}
