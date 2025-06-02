@@ -44,10 +44,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-LXPBL5QZKN" />
       <body
         className={`${poppins.className} bg-black overflow-x-hidden w-screen h-screen antialiased`}
       >
+        <GoogleTagManager gtmId="G-LXPBL5QZKN" />
         <BackgroundBeams />
         {children}
       </body>
