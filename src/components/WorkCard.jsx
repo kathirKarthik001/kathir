@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const data = [
   {
-    date: "Apr 2024 - Sep 2024 ",
+    date: "Apr 2025 - Oct 2025 ",
     title: "Full Stack Intern",
-    company: "The Foundax Company",
-    imgSource: "/foundax.webp",
-    url: "https://www.linkedin.com/company/the-foundax-company/",
+    company: "Wheelson Technologies",
+    imgSource: "/wheelson_tech.webp",
+    url: "https://www.linkedin.com/company/wheelson-technologies/",
   },
   {
     date: "Jan 2024 - Feb 2024",

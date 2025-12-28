@@ -11,19 +11,18 @@ import {
   FaCss3Alt,
   FaReact,
   FaNodeJs,
-  FaGit,
   FaFigma,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiRedux,
-  SiExpress,
+  SiPostgresql,
   SiMongodb,
   SiFirebase,
-  SiMysql,
   SiPostman,
-  SiCanva,
+  SiGithubactions,
 } from "react-icons/si";
 
 const skills = [
@@ -38,8 +37,8 @@ const skills = [
   { name: "Next.js", icon: <SiNextdotjs className="text-white text-3xl" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-600 text-3xl" /> },
   {
-    name: "Express.js",
-    icon: <SiExpress className="text-gray-500 text-3xl" />,
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="text-blue-600 text-3xl" />,
   },
   {
     name: "Firebase",
@@ -47,9 +46,9 @@ const skills = [
   },
   { name: "MongoDB", icon: <SiMongodb className="text-green-500 text-3xl" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-600 text-3xl" /> },
-  { name: "Figma", icon: <FaFigma className="text-pink-500 text-3xl" /> },
-  { name: "Canva", icon: <SiCanva className="text-blue-600 text-3xl" /> },
-  { name: "Git", icon: <FaGit className="text-red-600 text-3xl" /> },
+  { name: "Docker", icon: <FaDocker className="text-blue-600 text-3xl" /> },
+  { name: "CI/CD", icon: <SiGithubactions className="text-blue-600 text-3xl" /> },
+  { name: "Figma", icon: <FaFigma className="text-red-600 text-3xl" /> },
 ];
 
 const TechStack = () => {
