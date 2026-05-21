@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    date: "UG | PRESENT",
+    date: "UG | 2026",
     title: "B.E. Computer Science and Engineering",
     description: "KPR Institute of Engineering and Technology",
-    grade: "87 %",
+    grade: "90 %",
   },
   {
     date: "HSC | 2022",

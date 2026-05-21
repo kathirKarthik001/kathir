@@ -40,7 +40,7 @@ const Footer = () => {
       {/* Developer Credit */}
       <p className="text-sm mt-4 text-white md:mt-0">
         <span className="font-semibold text-white">A Kathir Creation</span> |
-        2025
+        2026
       </p>
     </footer>
   );
